@@ -1,0 +1,29 @@
+{
+  "name": "paulo-senha",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/server.js",
+    "build-prod": "babel src --out-dir lib",
+    "test": "cross-env NODE_ENV=test jest"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.17.1",
+    "handlebars": "^4.7.7",
+    "node-cache": "^5.1.2",
+    "nodemailer": "^6.6.1",
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.3",
+    "@babel/core": "^7.14.3",
+    "@babel/node": "^7.14.2",
+    "@babel/preset-env": "^7.14.4",
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1"
+  }
+}
